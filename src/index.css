@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: BerkeleyMono;
+    src: url(../public/font/BerkeleyMono-Regular.woff2) format("woff2");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: BerkeleyMono;
+    src: url(../public/font/BerkeleyMono-Regular.woff2) format("woff2");
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: BerkeleyMono;
+    src: url(../public/font/BerkeleyMono-Regular.woff2) format("woff2");
+    font-weight: 400;
+    font-style: italic
+}
+
+@font-face {
+    font-family: BerkeleyMono;
+    src: url(../public/font/BerkeleyMono-Regular.woff2) format("woff2");
+    font-weight: 700;
+    font-style: italic
+}
+.hero-jp {
+    pointer-events: none;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(159, 123, 107, 1);
+}
+
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.main-h2-customStyle {
+    -webkit-transform: translate3d(0, 100px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(3deg) skew(0, 0);
+    -moz-transform: translate3d(0, 100px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(3deg) skew(0, 0);
+    -ms-transform: translate3d(0, 100px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(3deg) skew(0, 0);
+    transform: translate3d(0, 100px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(3deg) skew(0, 0);
+    opacity: 0;
+}
+
+.primary-button {
+    z-index: 2;
+}

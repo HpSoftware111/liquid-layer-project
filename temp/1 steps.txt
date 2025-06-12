@@ -1,0 +1,47 @@
+First src/pages/staking.js
+	- delete below this code in Box of Pool component
+	{(lockallow) ? (
+                    <Box
+                      display={"flex"}
+                      justifyContent={"space-between"}
+                      width={xs ? "101px" : "142px"}
+                    >
+                      <Button
+                        type={"plus"}
+                        width={xs ? "40px" : "55px"}
+                        height={xs ? "40px" : "55px"}
+                        fontSize={"28px"}
+                        onClick={() => {
+                          setOpen(true);
+                          setType(1);
+                          setCurIndex(i);
+                          setAmount(0);
+                        }}
+                      >
+                        +
+                      </Button>
+                      <Button
+                        type={"minus"}
+                        width={xs ? "40px" : "55px"}
+                        height={xs ? "40px" : "55px"}
+                        fontSize={"28px"}
+                        disabled={
+                          !(accountlockinfo[i].available > 0)
+                        }
+                        onClick={() => onWithdraw(i)}
+                        _onClick={() => {
+                          setOpen(true);
+                          setType(2);
+                          setCurIndex(i);
+                          setAmount(0);
+                        }}
+                      >
+                        -
+                      </Button>
+                    </Box>
+                  ) : (
+                    ""
+                  )}
+	- src/ componets/index.js 
+	export const Pool = styled(Box)`
+  		width: calc(100% - 100px);
